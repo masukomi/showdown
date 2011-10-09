@@ -10,10 +10,10 @@
 
 <body>
 
-	<div id="pageHeader">
-		<h1><a href="http://www.attacklab.net/showdown-gui.html">Showdown</a></h1>
+	<header id="pageHeader">
+		<h1><a href="http://hawkrives.github.com/showdown/">Showdown</a></h1>
 		<h4>a javascript port of <a href="http://daringfireball.net/projects/markdown/" title="The Markdown web site">Markdown</a></h4>
-	</div>
+	</header>
 	
 	<div id="leftContainer">
 		<div class="paneHeader">
@@ -27,15 +27,15 @@ This page lets you create HTML by entering text in a simple format that's easy t
   - Type Markdown text in the left window
   - See the HTML in the right
 
-Markdown is a lightweight markup language based on the formatting conventions that people naturally use in email.  As [John Gruber] writes on the [Markdown site] [1]:
+Markdown is a lightweight markup language based on the formatting conventions that people naturally use in email.  As [John Gruber] writes on the [Markdown site][markdown home]:
 
-&gt; The overriding design goal for Markdown's
-&gt; formatting syntax is to make it as readable 
-&gt; as possible. The idea is that a
-&gt; Markdown-formatted document should be
-&gt; publishable as-is, as plain text, without
-&gt; looking like it's been marked up with tags
-&gt; or formatting instructions.
+> The overriding design goal for Markdown's
+> formatting syntax is to make it as readable 
+> as possible. The idea is that a
+> Markdown-formatted document should be
+> publishable as-is, as plain text, without
+> looking like it's been marked up with tags
+> or formatting instructions.
 
 This document is written in Markdown; you can see the plain-text version on the left.  To get a feel for Markdown's syntax, type some text into the left window and watch the results in the right.  You can see a Markdown syntax guide by switching the right-hand window from *Preview* to *Syntax Guide*.
 
@@ -44,8 +44,8 @@ Showdown is a Javascript port of Markdown.  You can get the full [source code] b
 **Start with a [blank page] or edit this document in the left window.**
 
   [john gruber]: http://daringfireball.net/
-  [1]: http://daringfireball.net/projects/markdown/
-  [source code]: http://www.attacklab.net/showdown-v0.9.zip
+  [markdown home]: http://daringfireball.net/projects/markdown/
+  [source code]: https://github.com/hawkrives/showdown/zipball/master
   [blank page]: ?blank=1 "Clear all text"
 
 </textarea> 
@@ -436,7 +436,7 @@ Like code blocks, code spans will be displayed in a monospaced typeface.  Markdo
 
 	</div>
 	
-	<div id="footer">
+	<footer id="footer">
 		<span id="byline">
 			<b><a href="https://github.com/hawkrives/showdown/zipball/master">Download source on GitHub</a></b>
 			 copyright &copy; 2007 John Fraser; this version maintained by <a href="hawkrives.github.com">hawkrives</a>
@@ -454,6 +454,6 @@ Like code blocks, code spans will be displayed in a monospaced typeface.  Markdo
 			</select>
 		</span>
 		<div id="processingTime" title="Last processing time">0 ms</div>
-	</div>
+	</footer>
 	</body>
 </html>

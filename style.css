@@ -173,7 +173,7 @@ div.pane {
 	font-size: 1.3em;
 }
 
-#footer {
+footer {
 	margin: 0;
 	padding: 0;
 	position: relative;
@@ -184,12 +184,12 @@ div.pane {
 	font-family: Helvetica, Arial, Verdana, sans-serif;
 }
 
-#footer a {
+footer a {
 	text-decoration: none;
 	color: #666;
 }
 
-#footer a:hover {
+footer a:hover {
 	text-decoration: underline;
 }
 
