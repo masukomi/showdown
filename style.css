@@ -67,7 +67,7 @@ textarea {
 	right: 1.5%;
 }
 
-#rightContainer > * {
+#rightContainer > *, #rightContainer #paneSetting {
 	float: right;
 }
 
