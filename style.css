@@ -155,11 +155,11 @@ div.pane {
 #previewPane > * {
 	margin-left: 4px;
 	margin-right: 4px;
-	}
+}
 
 #previewPane > blockquote {
 	margin-left: 3em;
-	}
+}
 
 #previewPane > :first-child {
 	margin-top: 4px; /* pane padding */
@@ -167,10 +167,6 @@ div.pane {
 
 #previewPane * {
 	line-height: 1.4em;
-}
-
-#previewPane code {
-	font-size: 1.3em;
 }
 
 footer {
