@@ -10,8 +10,8 @@ html {
 	overflow: hidden;
 }
 
-textarea {
-	font-family: monospace;
+textarea, code, pre {
+	font-family: Consolas, monospace;
 }
 
 #pageHeader {
