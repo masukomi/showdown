@@ -1,4 +1,3 @@
-//
 // showdown.js -- A javascript port of Markdown.
 //
 // Copyright (c) 2007 John Fraser.
@@ -17,7 +16,7 @@
 //
 //   <http://www.attacklab.net/>
 //
-
+/////////////////////////////////////////////////////////////////
 //
 // Wherever possible, Showdown is a straight, line-by-line port
 // of the Perl version of Markdown.
@@ -34,7 +33,7 @@
 // This port needs the new RegExp functionality of ECMA 262,
 // 3rd Edition (i.e. Javascript 1.5).  Most modern web browsers
 // should do fine.  Even with the new regular expression features,
-// We do a lot of work to emulate Perl's regex functionality.
+// we do a lot of work to emulate Perl's regex functionality.
 // The tricky changes in this file mostly have the "attacklab:"
 // label.  Major or self-explanatory changes don't.
 //
