@@ -5,10 +5,10 @@
 	<title>Showdown - Markdown in Javascript</title>
 	<script type="text/javascript" src="showdown.js"></script>
 	<script type="text/javascript" src="showdown-gui.js"></script>
-	<style> @import url('style.css'); </style>
+	<link href="../lib/style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body id="showdown">
 	<header id="pageHeader">
 		<h1><a href="http://hawkrives.github.com/showdown/">Showdown</a></h1>
 		<h4>a javascript port of <a href="http://daringfireball.net/projects/markdown/" title="The Markdown web site">Markdown</a></h4>
@@ -385,13 +385,19 @@ Like code blocks, code spans will be displayed in a monospaced typeface.  Markdo
 	<footer id="footer">
 		<span id="byline">
 			<b><a href="https://github.com/hawkrives/showdown/zipball/master">Download source on GitHub</a></b>
-			 copyright &copy; 2007 John Fraser; this version maintained by <a href="hawkrives.github.com">hawkrives</a>
+			 copyright &copy; 2007 John Fraser; this version maintained by <a href="hawkrives.github.com">hawkrives</a>.
 		</span>
+
+		<ul>
+			<li><a href="http://hawkrives.github.com">Home</a></li>
+			<li><a href="../counter/index.html">Counter</a></li>
+			<li><a href="../showdown/index.html">Showdown</a></li>
+			<li><a href="../tabifier/index.html">Tabifier</a></li>
+			<li><a href="../text2ascii/index.html">Text to ASCII</a></li>
+		</ul>
 	
 		<span id="convertTextControls">
-			<button id="convertTextButton" type="button" title="Convert text now">
-				Convert text
-			</button>
+			<button id="convertTextButton" type="button" title="Convert text now">Convert text</button>
 			
 			<select id="convertTextSetting">
 				<option value="delayed">in the background</option>
