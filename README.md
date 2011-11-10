@@ -1,4 +1,3 @@
-
 NOTE -- Showdown on GitHub
 ==========================
 
@@ -32,6 +31,18 @@ Original Markdown Copyright (c) 2004-2005 John Gruber
 Redistributable under a BSD-style open source license.
 See license.txt for more information.
 
+Quick Example
+-------------
+
+```  js
+var Showdown = require('showdown').Showdown
+var converter = new Showdown().converter()
+
+converter.makeHtml('#hello markdown!')
+
+// <h1 id='<h1 id="hellomarkdown">hello, markdown</h1>
+
+```
 
 What's it for?
 --------------

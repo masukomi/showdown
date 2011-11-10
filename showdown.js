@@ -355,6 +355,7 @@ var _RunBlockGamut = function(text) {
 
 	text = _DoLists(text);
 	text = _DoCodeBlocks(text);
+	text = _DoGithubCodeBlocks(text);
 	text = _DoBlockQuotes(text);
 
 	// We already ran _HashHTMLBlocks() before, in Markdown(), but that
@@ -888,11 +889,47 @@ var _DoCodeBlocks = function(text) {
 	return text;
 }
 
+var _DoGithubCodeBlocks = function(text) {
+//
+//  Process Github-style code blocks
+//  Example:
+//  ```ruby
+//  def hello_world(x)
+//    puts "Hello, #{x}"
+//  end
+//  ```
+//  
+
+
+	// attacklab: sentinel workarounds for lack of \A and \Z, safari\khtml bug
+	text += "~0";
+	
+	text = text.replace(/\n```(.*)\n([^`]+)\n```/g,
+		function(wholeMatch,m1,m2) {
+			var language = m1;
+			var codeblock = m2;
+		
+			codeblock = _EncodeCode(codeblock);
+			codeblock = _Detab(codeblock);
+			codeblock = codeblock.replace(/^\n+/g,""); // trim leading newlines
+			codeblock = codeblock.replace(/\n+$/g,""); // trim trailing whitespace
+
+			codeblock = "<pre><code class=" + language + ">" + codeblock + "\n</code></pre>";
+
+			return hashBlock(codeblock);
+		}
+	);
+
+	// attacklab: strip sentinel
+	text = text.replace(/~0/,"");
+
+	return text;
+}
+
 var hashBlock = function(text) {
 	text = text.replace(/(^\n+|\n+$)/g,"");
 	return "\n\n~K" + (g_html_blocks.push(text)-1) + "K\n\n";
 }
-
 
 var _DoCodeSpans = function(text) {
 //
@@ -944,7 +981,6 @@ var _DoCodeSpans = function(text) {
 
 	return text;
 }
-
 
 var _EncodeCode = function(text) {
 //
