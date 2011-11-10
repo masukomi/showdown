@@ -1,4 +1,3 @@
-//
 // showdown-gui.js
 //
 // A sample application for Showdown, a javascript port
@@ -246,6 +245,7 @@ function onInput() {
 		// Even if we're updating every keystroke, use a timer at 0.
 		// This gives the browser time to handle other events.
 		convertTextTimer = window.setTimeout(convertText,timeUntilConvertText);
+		count(inputPane);
 	}
 }
 

@@ -5,6 +5,7 @@
 	<title>Showdown - Markdown in Javascript</title>
 	<script type="text/javascript" src="showdown.js"></script>
 	<script type="text/javascript" src="showdown-gui.js"></script>
+	<script type="text/javascript" src="wordcount.js"></script>
 	<style> @import url('style.css'); </style>
 </head>
 
@@ -18,7 +19,7 @@
 		<div class="paneHeader">
 			<span>Input</span>
 		</div>
-		<textarea id="inputPane" cols="80" rows="20" class="pane">Using this tool
+		<textarea id="inputPane" cols="80" rows="20" class="pane" >Using this tool
 ---------------
 
 This page lets you create HTML by entering text in a simple format that's easy to read and write.
@@ -399,7 +400,10 @@ Like code blocks, code spans will be displayed in a monospaced typeface.  Markdo
 				<option value="manual">manually</option>
 			</select>
 		</span>
-		<div id="processingTime" title="Last processing time">0 ms</div>
+		<div id="rightFooter">
+		<span id="counted">0 words 0 characters</span>
+		<span id="processingTime" title="Last processing time">0 ms</span>
+		</div>
 	</footer>
 	</body>
 </html>
