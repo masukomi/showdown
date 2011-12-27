@@ -64,9 +64,7 @@ Markdown Syntax Guide
 
 This is an overview of Markdown's syntax.  For more information, visit the [Markdown web site].
 
- [Markdown web site]:
-   http://daringfireball.net/projects/markdown/
-
+ [Markdown web site]: http://daringfireball.net/projects/markdown/
 
 
 Italics and Bold
@@ -77,7 +75,6 @@ Italics and Bold
 **This is bold**, and so is __this__.
 
 You can use ***italics and bold together*** if you ___have to___.
-
 
 
 Links
@@ -96,7 +93,6 @@ Here's a very readable link to [Yahoo!].
   [yahoo!]: http://www.yahoo.com/
 
 The link definitions can appear anywhere in the document -- before or after the place where you use them.  The link definition names (`1` and `Yahoo!`) can be any unique string, and are case-insensitive; `[Yahoo!]` is the same as `[YAHOO!]`.
-
 
 Advanced links: Title attributes
 --------------------------------
@@ -122,7 +118,6 @@ My web site is at &lt;http://www.attacklab.net&gt;.
 If you use this format for email addresses, Showdown will encode the address to make it harder for spammers to harvest.  Try it and look in the *HTML Output* pane to see the results:
 
 Humans can read this, but most spam harvesting robots can't: &lt;me@privacy.net&gt;
-
 
 
 Headers
@@ -152,7 +147,6 @@ You can also use hash marks for all six levels of HTML headers:
 The closing `#` characters are optional.
 
 
-
 Horizontal Rules
 ================
 
@@ -168,7 +162,6 @@ You can also use spaces between the characters:
 -  -  -  -
 
 All of these examples produce the same output.
-
 
 
 Lists
@@ -194,7 +187,6 @@ A double-spaced list:
 - This list gets wrapped in `&lt;p&gt;` tags
 
 - So there will be extra space between items
-
 
 Advanced lists: Nesting
 -----------------------
@@ -231,7 +223,6 @@ You can put other Markdown blocks in a list; just indent four spaces for each ne
         and four to trigger the code block.
 
 
-
 Blockquotes
 ===========
 
@@ -243,7 +234,6 @@ Blockquotes are indented:
 &gt; The syntax is based on the way email programs
 &gt; usually do quotations. You don't need to hard-wrap
 &gt; the paragraphs in your blockquotes, but it looks much nicer if you do.  Depends how lazy you feel.
-
 
 Advanced blockquotes: Nesting
 -----------------------------
@@ -259,13 +249,11 @@ Parragraph breaks in a blockquote:
 &gt; humans if you include the extra `&gt;`
 &gt; between paragraphs.
 
-
 Blockquotes within a blockquote:
 
 &gt; A standard blockquote is indented
 &gt; &gt; A nested blockquote is indented more
 &gt; &gt; &gt; &gt; You can nest to any depth.
-
 
 Lists in a blockquote:
 
@@ -277,7 +265,6 @@ Preformatted text in a blockquote:
 
 &gt;     Indent five spaces total.  The first
 &gt;     one is part of the blockquote designator.
-
 
 
 Images
@@ -310,7 +297,6 @@ But you can use a slightly more verbose version of implicit reference names:
 The reference name (`valid icon`) is also used as the alt text.
 
 
-
 Inline HTML
 ===========
 
@@ -337,7 +323,6 @@ So:
 &lt;/div&gt;
 
 
-
 Preformatted Text
 =================
 
@@ -358,7 +343,6 @@ You cannot use Markdown or HTML within a code block, which makes them a convenie
     &lt;/blink&gt;
 
 
-
 Code Spans
 ==========
 
@@ -372,7 +356,8 @@ Like code blocks, code spans will be displayed in a monospaced typeface.  Markdo
 
  Markdown italicizes things like this: `I *love* it.`
 
- Don't use the `&lt;font&gt;` tag; use CSS instead.</textarea>
+ Don't use the `&lt;font&gt;` tag; use CSS instead.
+</textarea>
 	</div>
 	
 	<footer id="footer">
