@@ -19,6 +19,7 @@ textarea, code, pre {
 	padding: 0;
 	text-align: center;
 	color: #766;
+	cursor: default;
 }
 
 #pageHeader h1:after {
@@ -60,30 +61,16 @@ textarea, code, pre {
 .paneHeader {
 	margin: 0;
 	padding: 0;
-	position: relative;
 	width: 100%;
-	display: block;
 	height: 2em;
-}
-
-.paneHeader * {
-	position: relative;
-	font-weight: 900;
 }
 
 .paneHeader span {
 	color: #444;
 	padding: 0 0.75em;
-	font-size: 110%;
 }
 
 #paneSetting {
-	display: block;
-	margin-left: auto;
-	margin-right: 0.5em;
-	font-size: 110%;
-	font-weight: 900;
-	font-family: Arial, Verdana, sans-serif;
 	background-color: #dacccc;
 	color: #444;
 	border: 1px solid #999;
@@ -101,11 +88,12 @@ textarea, code, pre {
 	border-right: 1px solid #000;
 	border-bottom: 1px solid #000;
 
-	/* note: the panes get their height set with
-       javascript; see sizeTextAreas(). */
+    /* note: the panes get their height set with javascript; see
+     * sizeTextAreas(). 
+     * for now, set a height so things look nice if the user has
+     * javascript disabled 
+     */
 
-	/* for now, set a height so things look nice
-	   if the user has javascript disabled */
 	height: 400px;
 }
 
