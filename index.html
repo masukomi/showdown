@@ -5,8 +5,7 @@
 	<title>Showdown - Markdown in Javascript</title>
 	<script type="text/javascript" src="showdown.js"></script>
 	<script type="text/javascript" src="showdown-gui.js"></script>
-	<script type="text/javascript" src="wordcount.js"></script>
-	<style> @import url('style.css'); </style>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -15,11 +14,8 @@
 	</header>
 	
 	<div id="leftContainer">
-		<div class="paneHeader">
-			<span>Input</span>
-		</div>
-		<textarea id="inputPane" cols="80" rows="20" class="pane" >Using this tool
----------------
+		<div class="paneHeader"><span>Input</span></div>
+		<textarea id="inputPane" cols="80" rows="20" class="pane"># Using this tool #
 
 This page lets you create HTML by entering text in a simple format that's easy to read and write.
 
@@ -46,7 +42,6 @@ Showdown is a Javascript port of Markdown.  You can get the full [source code] b
   [markdown home]: http://daringfireball.net/projects/markdown/
   [source code]: https://github.com/hawkrives/showdown/zipball/master
   [blank page]: ?blank=1 "Clear all text"
-
 </textarea> 
 	</div>
 
@@ -377,15 +372,13 @@ Like code blocks, code spans will be displayed in a monospaced typeface.  Markdo
 
  Markdown italicizes things like this: `I *love* it.`
 
- Don't use the `&lt;font&gt;` tag; use CSS instead.
-
-</textarea>
+ Don't use the `&lt;font&gt;` tag; use CSS instead.</textarea>
 	</div>
 	
 	<footer id="footer">
 		<span id="byline">
 			<b><a href="https://github.com/hawkrives/showdown/zipball/gh-pages">Download</a> the source <a href="https://github.com/hawkrives/showdown/">on GitHub</a></b>
-			 copyright &copy; 2007 John Fraser; this version maintained by <a href="hawkrives.github.com">hawkrives</a>
+			 copyright &copy; 2007 John Fraser; this version maintained by <a href="http://hawkrives.github.com">hawkrives</a>
 		</span>
 	
 		<span id="convertTextControls">
