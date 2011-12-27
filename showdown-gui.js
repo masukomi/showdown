@@ -41,15 +41,11 @@
 //
 
 
-//
 // Register for onload
-//
 window.onload = startGui;
 
 
-//
 // Globals
-//
 
 var converter;
 var convertTextTimer,processingTime;
@@ -59,9 +55,7 @@ var inputPane,previewPane,outputPane,syntaxPane;
 var maxDelay = 3000; // longest update pause (in ms)
 
 
-//
 //	Initialization
-//
 
 function startGui() {
 	// find elements
@@ -135,9 +129,7 @@ function startGui() {
 }
 
 
-//
 //	Conversion
-//
 
 function convertText() {
 	// get input text
@@ -179,9 +171,7 @@ function convertText() {
 };
 
 
-//
 //	Event handlers
-//
 
 function count(this_field) {
 	var char_count = this_field.value.length;
@@ -200,7 +190,6 @@ function count(this_field) {
 
 	if (char_count == 1) { charOrChars = " character"; } 
 	else { charOrChars = " characters"; }
-
 
 	document.getElementById('counted').innerHTML = word_count + wordOrWords + "," + "    " + char_count + charOrChars + ",";
 }
@@ -271,14 +260,12 @@ function onInput() {
 }
 
 
-//
 // Smart scrollbar adjustment
 //
 // We need to make sure the user can't type off the bottom
 // of the preview and output pages.  We'll do this by saving
 // the proportional scroll positions before the update, and
 // restoring them afterwards.
-//
 
 var previewScrollPos;
 var outputScrollPos;
@@ -308,18 +295,16 @@ function restoreScrollPositions() {
 	setScrollPos(outputPane,outputScrollPos);
 }
 
-//
 // Textarea resizing
 //
 // Some browsers (i.e. IE) refuse to set textarea
 // percentage heights in standards mode. (But other units?
-// No problem.  Percentage widths? No problem.)
+// No problem. Percentage widths? No problem.)
 //
 // So we'll do it in javascript.  If IE's behavior ever
 // changes, we should remove this crap and do 100% textarea
 // heights in CSS, because it makes resizing much smoother
 // on other browsers.
-//
 
 function getTop(element) {
 	var sum = element.offsetTop;
