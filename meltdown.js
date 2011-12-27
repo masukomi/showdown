@@ -1,4 +1,4 @@
-// showdown-gui.js
+// meltdown.js
 //
 // A sample application for Showdown, a javascript port
 // of Markdown.
