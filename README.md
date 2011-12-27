@@ -1,32 +1,34 @@
 NOTE -- Showdown on GitHub
 ==========================
 
-Please note that I, Corey, am not the author of Showdown. Rather, I found it
-some time back at <http://attacklab.net/showdown/> and wanted to see it
-available on GitHub.
+I, Hawken Rives, forked this from @coreyti (on github) to maintain my own
+copy, so that I would never be without a js-based Markdown converter when I
+needed one. Below is @coreyti's note, reproduced in its entirety.
 
-All credit and praise for authoring this library should go to John Fraser.
+> Please note that I, Corey, am not the author of Showdown. Rather, I found it
+> some time back at <http://attacklab.net/showdown/> and wanted to see it
+> available on GitHub.
+> 
+> All credit and praise for authoring this library should go to John Fraser.
+> 
+> Oh, and John Gruber of course.
+> 
+> That said, I have recently see some GitHub forking activity and a pull
+> request. As such, I will endeavor to ordain myself as a maintainer of
+> Showdown, at least as it exists on GitHub.
+> 
+> Apologies for any confusion or perceived misinformation.
+> 
+> Cheers,  
+> Corey
 
-Oh, and John Gruber of course.
 
-That said, I have recently see some GitHub forking activity and a pull
-request. As such, I will endeavor to ordain myself as a maintainer of
-Showdown, at least as it exists on GitHub.
-
-Apologies for any confusion or perceived misinformation.
-
-Cheers,  
-Corey
-
-
-Showdown -- A JavaScript port of Markdown
+Showdown - A JavaScript port of Markdown
 =========================================
 
-Showdown Copyright (c) 2007 John Fraser.
-<http://www.attacklab.net/>
+Showdown Copyright (&copy;) 2007 [John Fraser].
 
-Original Markdown Copyright (c) 2004-2005 John Gruber
-<http://daringfireball.net/projects/markdown/>
+Original Markdown Copyright (&copy;) 2004-2005 [John Gruber]
 
 Redistributable under a BSD-style open source license.
 See license.txt for more information.
@@ -40,7 +42,7 @@ var converter = new Showdown().converter()
 
 converter.makeHtml('#hello markdown!')
 
-// <h1 id='<h1 id="hellomarkdown">hello, markdown</h1>
+// <h1 id="hellomarkdown">hello, markdown</h1>
 
 ```
 
@@ -92,12 +94,13 @@ Browser Compatibility
 
 Showdown has been tested successfully with:
 
- - Firefox 1.5 and 2.0
- - Internet Explorer 6 and 7
- - Safari 2.0.4
- - Opera 8.54 and 9.10
- - Netscape 8.1.2
- - Konqueror 3.5.4
+- Firefox 1.5 through 12
+- Internet Explorer 6 and 7
+- Safari 2.0.4 through 5.0.1
+- Opera 8.54 through 12
+- Google Chrome
+- Netscape 8.1.2
+- Konqueror 3.5.4
 
 In theory, Showdown will work in any browser that supports ECMA 262 3rd Edition (JavaScript 1.5).  The converter itself might even work in things that aren't web browsers, like Acrobat.  No promises.
 
@@ -172,7 +175,7 @@ In most cases, Showdown's output is identical to that of Perl Markdown v1.0.2b7.
     testing, but I went too far: now Showdown also makes
     empty titles for reference-style images:
 
-        Showdown  makes an empty title for
+        Showdown makes an empty title for
         reference-style ![images][] too.
 
         [images]: http://w3.org/Icons/valid-xhtml10
@@ -185,20 +188,20 @@ In most cases, Showdown's output is identical to that of Perl Markdown v1.0.2b7.
            improbable URL
         </a>
 
-    Showdown won't.  But still, don't do that.
+    Showdown won't. But still, don't do that.
 
 
 Credits
 ---------------------------
 
   * Origins
-    * [John Fraser](http://http://attacklab.net/):  
-      Author of Showdown
-    * [John Gruber](http://daringfireball.net/projects/markdown/):  
-      Author of Markdown
+    * [John Fraser]: Author of Showdown
+    * [John Gruber]: Author of Markdown
   * Maintenance
-    * [Corey Innis](http://github.com/coreyti):  
-      GitHub project maintainer
-    * [Remy Sharp](http://remysharp.com/):  
-      CommonJS-compatibility and more
+    * [Corey Innis]: GitHub project maintainer
+    * [Remy Sharp]: CommonJS-compatibility and more
 
+[John Fraser]: http://www.attacklab.net/
+[John Gruber]: http://daringfireball.net/
+[Corey Innis]: http://github.com/coreyti
+[Remy Sharp]: http://remysharp.com/
