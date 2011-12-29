@@ -1,209 +1,132 @@
-html,body {
-	margin: 0;
-	padding: 0;
-	font-family: Helvetica, "Calibri", Verdana, sans-serif;
-	font-size: 90%;
-	background-color: #e0d8d8;
-}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Calibri", "Helvetica Neue", Ubuntu, sans-serif;
+  font-size: 90%;
+  background: #e0d8d8; }
 
 html {
-	overflow: hidden;
-	color: #766;
-}
+  overflow: hidden;
+  color: #776666; }
 
 textarea, code, pre {
-	font-family: "Consolas", monospace;
-	font-size: 12px;
-}
+  font-family: "Consolas", Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 12px; }
 
 #pageHeader {
-	margin: .4em 0 -1.3em 0;
-	padding: 0;
-	text-align: center;
-	cursor: default;
-}
-
-#pageHeader h1:after {
-	content: "; ";
-}
-#pageHeader h1, h2 {
-	font-size: 1em;
-	display: inline;
-}
-
-#pageHeader * {
-	margin: 0;
-	padding: 0;
-	line-height: 1em;
-	font-weight: 100;
-}
+  margin: 0.4em 0 -1.3em 0;
+  padding: 0;
+  text-align: center;
+  cursor: default; }
+  #pageHeader h1:after {
+    content: "; "; }
+  #pageHeader h1, #pageHeader h2 {
+    font-size: 1em;
+    display: inline; }
+  #pageHeader * {
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+    font-weight: 100; }
 
 #leftContainer, #rightContainer {
-	margin: 0;
-	padding: 0;
-	position: relative;
-	width: 47.5%;
-}
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 47.5%; }
 
 #leftContainer {
-	float: left;
-	left: 1.5%;
-	margin-top: 25px;
-}
+  float: left;
+  left: 1.5%;
+  margin-top: 25px; }
 
 #rightContainer {
-	float: right;
-	right: 1.5%;
-	color: #222;
-}
-
-#rightContainer > *, #rightContainer #paneSetting {
-	float: right;
-}
+  float: right;
+  right: 1.5%;
+  color: #222; }
+  #rightContainer #paneSetting {
+    float: right; }
 
 .paneHeader {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 2em;
-}
-
-.paneHeader span {
-	padding: 0 0.75em;
-}
-
-#paneSetting {
-	background-color: #dacccc;
-	border: 1px solid #999;
-}
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 2em; }
+  .paneHeader span {
+    padding: 0 0.75em; }
+  .paneHeader #paneSetting {
+    background-color: #dacccc;
+    border: 1px solid #999; }
 
 .pane {
-	background-color: #eee;
-	border: 1px solid #888;
-	display: block;
-	margin: 0;
-	padding-left: 4px; /* pane padding */
-	padding: 0;
-	width: 100%;
-
-    /* note: the panes get their height set with javascript; see
-     * sizeTextAreas(). 
-     * for now, set a height so things look nice if the user has
-     * javascript disabled 
-     */
-
-	height: 400px;
-}
-
-#previewPane {
-	background-color: #f3eeee;
-}
+  background: #f3eeee;
+  border: 1px solid #888;
+  margin: 0;
+  padding: 0;
+  padding-left: 4px;
+  /* pane padding */
+  width: 100%;
+  /* note: the panes get their height set with javascript; see
+   * sizeTextAreas(). 
+   * for now, set a height so things look nice if the user has
+   * javascript disabled 
+   */
+  height: 400px; }
 
 #outputPane {
-	background-color: #6c6666;
-	color: #fff;
-	display: none;
-}
+  background: #6c6666;
+  color: #fff;
+  display: none; }
 
 #syntaxPane {
-	background-color: #f7ecec;
-	display: none;
-}
+  display: none; }
 
 div.pane {
-	overflow: auto;
-}
+  overflow: auto; }
 
 #inputPane {
-	background-color: #fff;
-}
+  background-color: #fff; }
 
 #previewPane {
-	padding: 0;
-}
-
-#previewPane > * {
-	margin-left: 4px;
-	margin-right: 4px;
-}
-
-#previewPane > blockquote {
-	margin-left: 3em;
-}
-
-#previewPane > :first-child {
-	margin-top: 4px; /* pane padding */
-}
-
-#previewPane * {
-	line-height: 1.4em;
-}
+  padding: 0 5px; }
+  #previewPane > blockquote {
+    margin-left: 3em; }
+  #previewPane > :first-child {
+    margin-top: 4px; }
+  #previewPane * {
+    line-height: 1.4em; }
 
 footer {
-	margin: 0;
-	padding: 0;
-	position: relative;
-	float: left;
-	width: 100%;
-	height: 2.5em;
-	margin-top: 0.5em;
-	font-family: Helvetica, Arial, Verdana, sans-serif;
-}
-
-footer a {
-	text-decoration: none;
-	color: #766;
-}
-
-footer a:hover {
-	text-decoration: underline;
-}
-
-#byline {
-	padding-left: 2em;
-}
+  margin: 0;
+  padding: 0;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 2.5em;
+  margin-top: 0.5em;
+  font-family: "Calibri", "Helvetica Neue", Ubuntu, sans-serif; }
+  footer a {
+    text-decoration: none;
+    color: #766; }
+    footer a:hover {
+      text-decoration: underline; }
+  footer #byline {
+    padding-left: 2em; }
+  footer #rightFooter {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 1em;
+    text-align: right;
+    top: 0; }
+  footer #processingTime {
+    margin: 0;
+    padding: 0;
+    width: 4em; }
 
 #convertTextControls {
-	display: none;
-	position: absolute;
-	right: 5em;
-}
-
-#convertTextButton {
-	line-height: 1em;
-	background-color: #ccbfbf;
-	color: #000;
-	border: none;
-}
-
-#convertTextButton:hover {
-	background-color: #fff;
-	color: black;
-}
-
-#convertTextSetting {
-	background-color: #dacccc;
-	color: #222;
-	border: 1px solid #999;
-}
-
-#rightFooter {
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	right: 1em;
-	text-align: right;
-	top: 0;
-}
-
-#processingTime {
-	margin: 0;
-	padding: 0;
-	width: 4em;
-}
+  display: none; }
 
 @media (max-width: 850px) {
-	#byline {
-		display: none;
-	}
-}
+  #byline {
+    display: none; } }
