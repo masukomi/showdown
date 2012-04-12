@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "name": "Showdown",
+  "description": "Markdown Converter written in Javascript",
+  "developer": {
+    "name": "Hawken Rives",
+    "url": "http://github.com/hawkrives"
+  },
+  "installs_allowed_from": [
+    "https://appstore.mozillalabs.com",
+    "http://hawkrives.github.com/showdown",
+    "*"
+  ],
+  "default_locale": "en"
+}
